@@ -1,8 +1,8 @@
 #use open jdk
-box: mybox
-id: openjdk
-ports:
-- $PORT
+box:
+  id: openjdk
+  ports:
+    - $PORT
 
 #build using mav
 build:
