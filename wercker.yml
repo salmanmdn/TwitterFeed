@@ -7,8 +7,8 @@ ports:
 # build using mav
 build:
   steps:
-    - install-packages
+    - install-packages:
     packages: maven
-    - script
+    - script:
        name: maven build
        code: mvn clean assembly:assembly
