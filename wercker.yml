@@ -1,5 +1,5 @@
 #use open jdk
-box:
+box:mybox
 id: openjdk
 ports:
 - $PORT
