@@ -14,7 +14,7 @@ spec:
       labels:
         app: twitter-feed
         commit: ${WERCKER_GIT_COMMIT}
-        color: green
+        color: blue
     spec:
       containers:
       - name: twitter-feed
@@ -26,7 +26,7 @@ spec:
           protocol: TCP
         volumeMounts:
           - name: podinfo
-            mountPath: /tmp
+            mountPath: /tmp1
             readOnly: false
       volumes:
         - name: podinfo
@@ -51,6 +51,6 @@ spec:
     targetPort: 8080
   selector:
     app: twitter-feed
-    color: green
+    color: blue
   type: ClusterIP
 ---
