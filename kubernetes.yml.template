@@ -1,6 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
+  namespace: kube-system
   name: twitter-feed-v4
   labels:
     commit: ${WERCKER_GIT_COMMIT}
@@ -41,6 +42,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: kube-system
   name: twitter-feed
   labels:
     app: twitter-feed
